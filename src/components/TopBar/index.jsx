@@ -21,8 +21,8 @@ function TopBar() {
 
     if (user) {
       if (
-        location.pathname.startsWith("/users/") &&
-        !location.pathname.includes("/photos")
+        location.pathname.startsWith("/user/") &&
+        !location.pathname.includes("/photosOfUser")
       ) {
         contextText = `${user.first_name} ${user.last_name}`;
       }

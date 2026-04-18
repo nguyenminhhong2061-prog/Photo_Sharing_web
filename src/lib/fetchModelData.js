@@ -1,6 +1,6 @@
 async function fetchModel(url) {
   try {
-    const response = await fetch(`https://gtsjgf-3000.csb.app${url}`);
+    const response = await fetch(`http://localhost:5000/api/${url}`);
 
     if (!response.ok) {
       throw new Error(
